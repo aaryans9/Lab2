@@ -1,0 +1,21 @@
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+#search-box {
+    height:5%;
+    font-size: 20px;
+}
+
+#map {
+    height: 95%;
+}
+
+#from-date,#to-date,#search-button {
+    font-size: 18px;
+}
+
+#result {
+    margin-left: 20px;
+}

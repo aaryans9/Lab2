@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+		<meta charset="utf-8" />
+        <title>Geoweb application</title>
+		<link rel="stylesheet" crossorigin=""
+				href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"
+						crossorigin=""></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+        <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+        <link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+        <div id="search-box">
+            <span>
+                Search Building permits by date :
+            </span>
+            <span>
+                <input id = "from-date" type="date">
+                <span style = "margin-left: 5px;margin-right: 5px;">to</span>
+                <input id = "to-date" type="date">
+            </span>
+            <button id = "search-button" onClick = "handleSearchButtonClick()">Search</button>
+            <span id="result"></span>
+        </div>
+		<div id="map"></div>
+	</body>
+    <script src="index.js"></script>
+</html>
